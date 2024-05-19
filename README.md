@@ -1,37 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ethikao
+boutique e-commerce 
+# 🌱 Ethikao
 
-## Getting Started
+Bienvenue dans le projet Ethikao ! 🎉 Découvrez comment consommer du chocolat de manière responsable et éthique. Nous nous engageons à vous fournir les meilleurs produits chocolatés d'origine africaine, fabriqués en Afrique. 🍫
 
-First, run the development server:
+## 🚀 Commencer
+
+Ces instructions vous guideront pour obtenir une copie du projet et le mettre en marche sur votre machine locale à des fins de développement et de test.
+
+### 📋 Prérequis
+
+- Node.js (version 14.x ou supérieure)
+- PostgreSQL (version 12.x ou supérieure)
+
+### 🔧 Installation
+
+1. Clonez le dépôt :
 
 ```bash
+git clone https://github.com/Jonathan-djimbi//ethikao.git
+cd ethikao
+
+
+Installez les dépendances :
+bash
+Copier le code
+npm install
+Configurez les variables d'environnement :
+Créez un fichier .env à la racine du projet et ajoutez vos informations de connexion à la base de données :
+
+env
+Copier le code
+DATABASE_URL="postgresql://ethikao_user:mot_de_passe@localhost:5432/ethikao"
+Migratez la base de données :
+bash
+Copier le code
+npx prisma migrate dev --name init
+Lancez le serveur de développement :
+bash
+Copier le code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌟 Vous devriez maintenant voir l'application fonctionner sur http://localhost:3000 !
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📂 Structure du Projet
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Voici un aperçu rapide de la structure des fichiers du projet :
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+bash
+Copier le code
+ethikao/
+├── prisma/
+│   ├── schema.prisma  # Définition du schéma Prisma
+├── public/
+│   ├── images/        # Images du projet
+├── src/
+│   ├── components/    # Composants réutilisables
+│   ├── pages/         # Pages de l'application
+│   ├── styles/        # Fichiers de styles CSS
+│   ├── app.js         # Point d'entrée principal de l'application
+│   ├── layout.js      # Layout de l'application
+├── .env               # Variables d'environnement
+├── README.md          # Ce fichier
+├── package.json       # Dépendances et scripts npm
+🛠️ Outils Utilisés
 
-## Learn More
+Next.js - Framework React pour le développement côté serveur
+Prisma - ORM pour Node.js et TypeScript
+PostgreSQL - Système de gestion de base de données relationnelle
+✨ Fonctionnalités
 
-To learn more about Next.js, take a look at the following resources:
+Catalogue de produits : Parcourez notre sélection de produits chocolatés.
+Détails du produit : Consultez les détails de chaque produit.
+Navigation fluide : Expérience utilisateur fluide et réactive grâce à Next.js.
+🤝 Contribuer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Les contributions sont ce qui rend la communauté open source géniale. Toute contribution que vous ferez sera grandement appréciée.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Forkez le projet
+Créez une branche pour votre fonctionnalité (git checkout -b fonctionnalite/AmazingFeature)
+Committez vos modifications (git commit -m 'Add some AmazingFeature')
+Pushez la branche (git push origin fonctionnalite/AmazingFeature)
+Ouvrez une Pull Request
+📧 Contact
 
-## Deploy on Vercel
+Pour toute question ou suggestion, veuillez contacter l'équipe à lomingo@icloud.com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# Ethikao
+Merci d'avoir visité notre projet ! 🌍💚 Nous espérons que vous apprécierez travailler avec Ethikao autant que nous aimons le développer.
