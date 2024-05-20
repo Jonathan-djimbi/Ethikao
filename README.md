@@ -85,4 +85,4 @@ Ouvrez une Pull Request
 
 Pour toute question ou suggestion, veuillez contacter l'équipe à lomingo@icloud.com
 
-Merci d'avoir visité notre projet ! 🌍💚 Nous espérons que vous apprécierez travailler avec Ethikao autant que nous aimons le développer.
+Merci d'avoir visité notre projet ! 🌍💚 Nous espérons que vous apprécierez travailler avec Mingo  autant que nous aimons le développer.
