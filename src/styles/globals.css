@@ -1,0 +1,374 @@
+/* Importer Font Awesome et la police Montserrat */
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css'; /* Ajout de Bootstrap */
+
+/* Styles globaux */
+body {
+  margin: 0;
+  padding-top: 70px; /* Ajoute un padding-top pour éviter que le contenu soit caché derrière la navbar */
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar-brand .logo {
+  height: 50px; /* Ajustez selon vos besoins */
+}
+
+.carrousel {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10rem; /* Ajoutez cet espace en bas du carrousel */
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
+
+.featured-products {
+  padding: 2rem;
+  text-align: center; /* Centrer le bloc entier avec le titre h2 */
+  margin-bottom: 10rem; /* Ajoutez cet espace en bas de la section */
+}
+
+.featured-products h2 {
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer le contenu du produit */
+  gap: 1rem;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: calc(33.333% - 1rem);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centrer le texte à l'intérieur de chaque carte produit */
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.product-card .price {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.product-card .cta {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.product-card .cta:hover {
+  background-color: #0056b3; /* Couleur du bouton au survol */
+}
+
+/* Classe pour la couleur de fond chocolat */
+.navbar-chocolate {
+  background-color: #D2691E; /* Chocolate color */
+  font-family: 'Montserrat', sans-serif; /* Appliquer la police Montserrat */
+}
+
+.navbar-chocolate .nav-link {
+  color: white; /* Couleur du texte du menu en blanc */
+  font-weight: 700; /* Texte plus épais */
+}
+
+.navbar-chocolate .nav-link:hover {
+  color: #ffe0b2; /* Couleur du texte au survol (optionnel) */
+}
+
+.navbar-chocolate .navbar-brand {
+  color: white; /* Couleur du texte de la marque en blanc */
+}
+
+.navbar-chocolate .navbar-brand img {
+  max-height: 50px; /* Ajustez la taille de l'image si nécessaire */
+}
+
+.navbar-chocolate .fas {
+  color: #290a04; /* Couleur des icônes */
+  margin-right: 10px; /* Ajout d'un espace entre les icônes */
+}
+
+.navbar-brand .logo {
+  height: 50px; /* Ajustez selon vos besoins */
+}
+
+/* Styles pour le carrousel */
+.carousel-caption-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: auto;
+  max-width: 600px;
+}
+
+/* Styles pour la section "Qui sommes-nous ?" */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centre la section horizontalement */
+  padding: 2rem;
+  background-color: #f8f9fa;
+  margin-bottom: 10rem; /* Ajoutez cet espace en bas de la section */
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-image {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.about-image img {
+  width: 100%; /* Agrandir l'image */
+  height: auto; /* Maintenir le ratio d'aspect */
+  border-radius: 8px;
+}
+
+.about-content {
+  flex: 2;
+  text-align: left; /* Aligner le texte à gauche */
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-content .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+  margin-top: 1rem;
+}
+
+.about-content .btn:hover {
+  background-color: #0056b3; /* Couleur du bouton au survol */
+}
+
+/* Styles pour la section "À propos de nous" */
+.about-us {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+  margin-bottom: 10rem; /* Ajoutez cet espace en bas de la section */
+}
+
+.about-us h2 {
+  margin-bottom: 2rem;
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-item {
+  max-width: 300px;
+  text-align: center;
+}
+
+.about-img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .about-section, .about-us, .featured-products {
+    padding: 1rem;
+    margin-bottom: 5rem; /* Réduire l'espace pour les petits écrans */
+  }
+  
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .navbar-chocolate .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-chocolate .nav-link {
+    padding: 0.5rem 1rem;
+  }
+
+  .product-card {
+    width: calc(100% - 1rem); /* Prenez toute la largeur disponible */
+  }
+}
+
+/* Styles pour le menu hamburger */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menu-overlay.open {
+  display: block;
+  opacity: 1;
+}
+
+.navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #D2691E;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 20;
+  padding-top: 3rem;
+}
+
+.navbar-collapse.show {
+  transform: translateX(0);
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav-item {
+  margin: 1rem 0;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffe0b2;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #D2691E;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 20;
+    padding-top: 3rem;
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+}
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

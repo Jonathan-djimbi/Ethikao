@@ -1,0 +1,31 @@
+.filterContainer {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+  }
+  
+  .filterGroup {
+    margin-bottom: 16px;
+  }
+  
+  .filterSelect {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .filterRange {
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  .filterTitle {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+  

@@ -1,0 +1,37 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 16px;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.cardDescription {
+  margin: 0;
+  padding: 0;
+  color: #666;
+}
+
+.cardPrice {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.button {
+  margin-top: 16px;
+}

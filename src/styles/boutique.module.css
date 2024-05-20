@@ -1,0 +1,51 @@
+.boutiquePage {
+    background-color: #f8f9fa;
+  }
+  
+  .title {
+    color: #D2691E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  
+  .cardTitle {
+    color: #D2691E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  
+  .btnPrimary {
+    background-color: #D2691E;
+    border: none;
+  }
+  
+  .btnPrimary:hover {
+    background-color: #a0522d;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  /* boutique.module.css */
+.boutique {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+      flex: 1 1 calc(50% - 32px); /* Deux cartes par ligne sur des écrans moyens */
+      max-width: calc(50% - 32px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+      flex: 1 1 100%; /* Une carte par ligne sur des petits écrans */
+      max-width: 100%;
+  }
+}

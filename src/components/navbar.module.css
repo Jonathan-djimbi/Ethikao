@@ -1,0 +1,95 @@
+/* Styles pour la navbar */
+.navbar {
+  background-color: #D2691E; /* Maintient la couleur de fond */
+  color: white;
+  z-index: 1000; /* S'assure que la navbar reste au-dessus des autres éléments */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navbar-toggler {
+  display: block;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  border: none; /* Supprime la bordure par défaut du bouton */
+  background: none; /* Supprime l'arrière-plan par défaut du bouton */
+}
+
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menuOverlay.open {
+  display: block;
+  opacity: 1;
+}
+
+.navbar-collapse {
+  background-color: #D2691E; /* Maintient la couleur de fond pour la version mobile */
+}
+
+.navbar-nav {
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav-item {
+  margin: 1rem 0;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffe0b2;
+}
+
+/* Styles spécifiques pour la version ordinateur */
+@media (min-width: 769px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    position: static;
+    transform: none;
+    padding-top: 0;
+    height: auto;
+    width: auto;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-item {
+    margin: 0 1rem;
+  }
+
+  .menuOverlay {
+    display: none;
+  }
+}
